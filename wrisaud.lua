@@ -37,17 +37,10 @@ repeat wait() until game:IsLoaded()
             if found then
                 print("YAYYYYY YOU GOT "..tostring(game:GetService("ReplicatedStorage")["Player_Datas"][user]["Slot_1"].Clan.Value))
                 local data = {
-                    ["content"] = "@<732153746309644300> YOU ROLLED SOMETHING",
+                    ["content"] = "<@732153746309644300> YOU ROLLED SOMETHING",
                     ["username"] = "dominic boushel",
                     ["avatar_url"] = "https://a.espncdn.com/combiner/i?img=/i/headshots/mma/players/full/2335639.png",
-                    ["embeds"] = {
-                        {
-                            ["description"] = "**Project Mugetsu**\n\n```User: "..user.."\n\nClan: "..game:GetService("ReplicatedStorage")["Player_Datas"][user]["Slot_1"].Clan.Value.."```",
-                            ["type"] = "rich",
-                            ["color"] = tonumber(0x5a3812)
-                        }
                     }
-                }
                 local newdata = game:GetService("HttpService"):JSONEncode(data)
                 local headers = {
                     ["content-type"] = "application/json"
