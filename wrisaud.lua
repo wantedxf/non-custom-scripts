@@ -2,7 +2,7 @@
 
 repeat wait() until game:IsLoaded()
     wait(2)
-    local clans = {"Uryu", "Yamamoto", "Urahara", "Kurosaki"} -- Will SPIN TILL IT GETS ONE OF THESE U CAN ADD MORE IF U WANT
+    local clans = {"Uryu", "Kurosaki"} -- Will SPIN TILL IT GETS ONE OF THESE U CAN ADD MORE IF U WANT
     local url = "https://canary.discord.com/api/webhooks/1097443720930017310/C7Dg9n8No1tg-_Y-oWMooIIXvbsYi8rsLE9kVOFc4vrdcHN43JE-7qykWfsHe1PlRo49" -- put ur webhook here (NOTIFY YOU IF U GET ONE OF THE CLANS U WANT)
 
     game:GetService("ReplicatedStorage").Change_Slot:InvokeServer(1)
